@@ -11,12 +11,8 @@ class BMI:
         self.feet = float(self.feet)
         self.inches = float(self.inches)
         self.weight = float(self.weight)
-        self.weight = float(self.weight) * float(0.45)
-        height = float(self.feet) * float(12.0)
-        height = float(height) + float(self.inches)
-        height = float(height) * float(0.025)
-        height = float(height) * float(height)
-        total = float(self.weight) / float(height)
+        height = (float(self.feet) * 12) + float(self.inches)
+        total = (float(self.weight) / float(height) / float(height)) * 703
         click.echo("\n\n=====================")
         click.echo('BMI: %.2f' % total)
         if total < 18.5:
@@ -28,3 +24,6 @@ class BMI:
         if total > 30:
             click.echo("\nYou are obese.")
         click.echo("=====================\n\n")
+
+        # Returned for the test program to use
+        return '%.1f' % total
