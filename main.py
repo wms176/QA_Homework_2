@@ -4,7 +4,7 @@ from retireClass import Retire
 
 
 @click.command()
-@click.option('--func', prompt='Press 1 to use the BMI Calculator, 2 to use the Retirement Calculator, or 3 to exit',
+@click.option('--func', prompt='Press enter the number for your desired option:\n1 to use the BMI Calculator \n2 to use the Retirement Calculator \n3 to exit\n',
               help='The person to greet.')
 def main(func):
     """Simple program that greets NAME for a total of COUNT times."""
@@ -15,12 +15,14 @@ def main(func):
     elif int(func) == 3:
         return
     else:
+        click.echo("\n\n======================================================\n")
         click.echo("***ERROR: Please enter either a 1, 2, or 3. Try again.")
+        click.echo("\n======================================================\n\n")
         main()
 
 
 @click.command()
-@click.option('--feet', prompt='Enter your height: \nfeet',
+@click.option('--feet', prompt='\n\nEnter your height: \nfeet',
               help='Your height, rounded down to the nearest whole number. Ex: if you are 5\'10\" then you would put 5')
 @click.option('--inches', prompt='inches',
               help='Your height\'s remainder in inches. Ex: if you are 5\'10\" then you would put 10')
@@ -34,7 +36,7 @@ def bmi(feet, inches, weight):
 
 
 @click.command()
-@click.option('--age', prompt='Enter your age ',
+@click.option('--age', prompt='\n\nEnter your age ',
               help='Your age in years')
 @click.option('--salary', prompt='Enter your salary ',
               help='Your salary')
