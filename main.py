@@ -38,7 +38,7 @@ def bmi(feet, inches, weight):
 @click.command()
 @click.option('--age', prompt='\n\nEnter your age ',
               help='Your age in years')
-@click.option('--salary', prompt='Enter your salary ',
+@click.option('--salary', prompt='Enter your yearly salary ',
               help='Your salary')
 @click.option('--saved', prompt='Enter the percentage saved as a decimal. ',
               help='Percentage saved as a decimal. Ex: 35% would be 0.35')
