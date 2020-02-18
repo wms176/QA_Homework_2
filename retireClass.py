@@ -8,6 +8,7 @@ class Retire:
         self.saved = saved
         self.goal = goal
 
+    @property
     def calculate(self):
         self.salary = float(self.salary)
         self.saved = float(self.saved)

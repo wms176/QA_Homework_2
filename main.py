@@ -31,7 +31,7 @@ def main(func):
 def bmi(feet, inches, weight):
     """A simple program that will calculate the user's BMI and tell them their weight category"""
     tmp = BMI(feet, inches, weight,)
-    tmp.calculate()
+    tmp.calculate
     main()
 
 
@@ -47,7 +47,7 @@ def bmi(feet, inches, weight):
 def retire(age, salary, saved, goal):
     """A simple function to determine the age that the user will reach their retirement goal"""
     tmp = Retire(age, salary, saved, goal)
-    tmp.calculate()
+    tmp.calculate
     main()
 
 

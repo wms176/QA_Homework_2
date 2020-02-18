@@ -15,13 +15,13 @@ def test_calculate():
 
     # I got these test values by writing an equation to find the age on paper
     # and solving each of the test cases with a calculator.
-    assert test1.calculate() == 74
-    assert test2.calculate() == 47
-    assert test3.calculate() == 67
-    assert test4.calculate() == 45
-    assert test5.calculate() == 65
-    assert test6.calculate() == 56
-    assert test7.calculate() == 27
-    assert test8.calculate() == 60
-    assert test9.calculate() == 48
-    assert test10.calculate() == 67
+    assert test1.calculate == 74
+    assert test2.calculate == 47
+    assert test3.calculate == 67
+    assert test4.calculate == 45
+    assert test5.calculate == 65
+    assert test6.calculate == 56
+    assert test7.calculate == 27
+    assert test8.calculate == 60
+    assert test9.calculate == 48
+    assert test10.calculate == 67
