@@ -7,6 +7,7 @@ class BMI:
         self.inches = inches
         self.weight = weight
 
+    @property
     def calculate(self):
         self.feet = float(self.feet)
         self.inches = float(self.inches)

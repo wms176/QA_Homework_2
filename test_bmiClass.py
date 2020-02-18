@@ -15,13 +15,13 @@ def test_calculate():
 
     # I got these test values from the BMI Calculator on the CDC's website
     # inputting the integers that were used in each test case above.
-    assert BMI.calculate(test1) == '22.1'
-    assert BMI.calculate(test2) == '31.7'
-    assert BMI.calculate(test3) == '20.2'
-    assert BMI.calculate(test4) == '17.4'
-    assert BMI.calculate(test5) == '66.9'
-    assert BMI.calculate(test6) == '40.6'
-    assert BMI.calculate(test7) == '82.4'
-    assert BMI.calculate(test8) == '104.6'
-    assert BMI.calculate(test9) == '20.4'
-    assert BMI.calculate(test10) == '17.8'
+    assert BMI.calculate == '22.1'
+    assert BMI.calculate == '31.7'
+    assert BMI.calculate == '20.2'
+    assert BMI.calculate == '17.4'
+    assert BMI.calculate == '66.9'
+    assert BMI.calculate == '40.6'
+    assert BMI.calculate == '82.4'
+    assert BMI.calculate == '104.6'
+    assert BMI.calculate == '20.4'
+    assert BMI.calculate == '17.8'
